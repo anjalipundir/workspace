@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.LearnBasics.View.AuthData"/>
+<fullyQualifiedTypeName name="com.google.api.client.json.jackson2.JacksonFactory"/>
+<fullyQualifiedTypeName name="com.google.api.client.extensions.appengine.auth.oauth2.AppEngineCredentialStore"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.regex.Matcher"/>
+<fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.awt.RenderingHints.Key"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="learn.ForKey"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="learn.TestKeyObj"/>
+<fullyQualifiedTypeName name="learn.ObjectAsKey"/>
+<fullyQualifiedTypeName name="learn.Employee"/>
+</qualifiedTypeNameHistroy>

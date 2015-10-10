@@ -1,0 +1,23 @@
+package learn;
+
+public class ForKey {
+	
+	int iVal;
+	
+	public ForKey() {
+	
+	}
+
+	public ForKey(int i) {
+		iVal = i;
+	}
+	
+	public int getIVal() {
+		return iVal;
+	}
+
+	public void setIVal(int iVal) {
+		this.iVal = iVal;
+	}
+
+}

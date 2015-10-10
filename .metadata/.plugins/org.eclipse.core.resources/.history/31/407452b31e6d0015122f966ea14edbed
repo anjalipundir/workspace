@@ -1,0 +1,23 @@
+package learn;
+
+public class TestKeyObj {
+	
+	int iVal;
+	
+	public TestKeyObj() {
+	
+	}
+
+	public TestKeyObj(int i) {
+		iVal = i;
+	}
+	
+	public int getIVal() {
+		return iVal;
+	}
+
+	public void setIVal(int iVal) {
+		this.iVal = iVal;
+	}
+
+}

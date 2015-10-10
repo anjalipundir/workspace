@@ -1,0 +1,25 @@
+package learn;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+
+public class ObjectAsKey {
+
+	public static void main(String args[]){
+		
+		HashMap<TestKeyObj, Employee> h = new HashMap<>(); 
+		
+		h.put(new TestKeyObj(1), new Employee(12,"Anjali","Pune","23"));
+		h.put(new TestKeyObj(2), new Employee(14,"Anita","Chamba","45"));
+		h.put(new TestKeyObj(2), new Employee(15,"Abhi","Dun","123")); 
+		
+		
+		System.out.println(h.get(new TestKeyObj(2)));
+		
+		
+		
+				
+	}
+}

@@ -1,0 +1,52 @@
+package learn;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+
+public class ObjectAsKey {
+
+	public static void main(String args[]){
+		
+		HashMap<TestKeyObj, Employee> h = new HashMap<>(); 
+		
+		Employee e = new Employee(12,"Anjali","Pune","23");
+		System.out.println("---------Before------------");
+		System.out.println(e);
+		System.out.println(e.getAddress());
+		System.out.println(e.getName());
+		
+		h.put(new TestKeyObj(1), e);
+		e = new Employee(14,"Anita","Chamba","45");
+		
+		System.out.println("---------Before 2nd------------");
+		System.out.println(e);
+		System.out.println(e.getAddress());
+		System.out.println(e.getName());
+		
+		h.put(new TestKeyObj(2), e);
+		
+		//e.setID(14);e.setAddress("Dun");e.setName("Abhi");e.setPhno("3425325");
+		e = new Employee(15,"Abhi","Dun","123");
+		
+		System.out.println("---------Before 3nd------------");
+		System.out.println(e);
+		System.out.println(e.getAddress());
+		System.out.println(e.getName());
+		
+		h.put(new TestKeyObj(2), e); 
+		
+		Iterator it = h.entrySet().iterator();
+		
+		while(it.hasNext()){
+			Entry<TestKeyObj, Employee> e1 = (Entry<TestKeyObj, Employee>)it.next();
+			TestKeyObj obj = e1.getKey();
+			Employee emp = (Employee) e1.getValue();
+			
+			System.out.print("\n\nKey :" + obj.getIVal());
+			System.out.print("\tValue :"+emp);
+			System.out.println("\tField :"+emp.getName());
+		}		
+	}
+}

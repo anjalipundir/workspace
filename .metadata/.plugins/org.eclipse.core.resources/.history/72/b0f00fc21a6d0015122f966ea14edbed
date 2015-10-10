@@ -1,0 +1,49 @@
+package learn;
+
+import java.util.HashMap;
+
+
+public class ObjectAsKey {
+
+	int id1;
+	int id2;
+	
+	public ObjectAsKey(int id1,int id2) {
+		this.id1 = id1;
+		this.id2 = id2;
+	}
+	public static void main(String args[]){
+		
+		HashMap<ObjectAsKey, Employee> h = new HashMap<>(); 
+		
+		h.put(new ObjectAsKey(1,1), new Employee(12,"Anjali","Pune","23"));
+		h.put(new ObjectAsKey(1,2), new Employee(14,"Anita","Chamba","45"));
+		h.put(new ObjectAsKey(1,2), new Employee(15,"Abhi","Dun","123")); 
+		
+		//I want to say new ObjectAsKey(2) = new ObjectAsKey(2)  
+		//Then I require to override hashcode and equals method
+		System.out.println(h.get(new ObjectAsKey(1,2)));
+
+				
+	}
+	
+	@Override
+	public int hashCode() {
+		
+		return id1.hashCode() + id2.hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+	
+		if(obj == null && obj.getClass() != getClass()){
+			return false;
+		}else {
+			ObjectAsKey objkey = (ObjectAsKey)obj;
+			if(this.id1 == objkey.id1 && this.id2 == objkey.id2){
+				return true;
+			}
+		}
+		return false;
+	}
+}

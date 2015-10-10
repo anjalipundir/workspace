@@ -1,0 +1,46 @@
+package learn;
+
+public class Employee {
+	
+	private int ID;
+	private String Name;
+	private String Address;
+	private String Phno;
+	public int getID() {
+		return ID;
+	}
+	
+	public Employee(){
+		
+	}
+	public Employee(int id, String name, String add, String phno){
+		this.ID = id;
+		this.Name = name; 
+		this.Address = add;
+		this.Phno = phno;
+	}
+	
+	public void setID(int iD) {
+		ID = iD;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
+	}
+	public String getPhno() {
+		return Phno;
+	}
+	public void setPhno(String phno) {
+		Phno = phno;
+	}
+
+	
+}

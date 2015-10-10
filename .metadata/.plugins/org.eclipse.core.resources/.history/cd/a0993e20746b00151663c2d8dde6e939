@@ -1,0 +1,26 @@
+package tryRegex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class TryRegex {
+	
+	public static void main(String args[]){
+		
+		String test = "This is a test string.	Hello Anjali.";
+		String pattern = "(\\d+)(.*)";
+		Pattern r = Pattern.compile(pattern);
+		
+		Matcher m = r.matcher(test);
+		if(m.find()){
+			System.out.println("Found0 : "+m.group(0));
+			//System.out.println("Found1 : "+m.group(1));
+			//System.out.println("Found2 : "+m.group(2));
+		}else {
+			System.out.println("No Match Found");
+		}
+		
+		
+	}
+
+}

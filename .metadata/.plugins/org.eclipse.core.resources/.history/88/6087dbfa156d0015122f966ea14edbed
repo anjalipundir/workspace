@@ -1,0 +1,58 @@
+package learn;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+
+
+public class ObjectAsKey {
+
+	public static void main(String args[]){
+		
+		HashMap<ForKey, Employee> h = new HashMap<>(); 
+		
+		Employee e = new Employee(12,"Anjali","Pune","23");
+		System.out.println("---------Before------------");
+		System.out.println(e);
+		System.out.println(e.getAddress());
+		System.out.println(e.getName());
+		
+		h.put(new ForKey(1), e);
+		e = new Employee(14,"Anita","Chamba","45");
+		
+		System.out.println("---------Before 2nd------------");
+		System.out.println(e);
+		System.out.println(e.getAddress());
+		System.out.println(e.getName());
+		
+		h.put(new ForKey(2), e);
+		
+		//e.setID(14);e.setAddress("Dun");e.setName("Abhi");e.setPhno("3425325");
+		e = new Employee(15,"Abhi","Dun","123");
+		
+		System.out.println("---------Before 3nd------------");
+		System.out.println(e);
+		System.out.println(e.getAddress());
+		System.out.println(e.getName());
+		
+		h.put(new ForKey(2), e);
+		
+		System.out.println("------- Printing Hash Map ------------");
+		System.out.println(h);
+		
+		
+		Iterator it = h.entrySet().iterator();
+		
+		while(it.hasNext()){
+			Entry<ForKey, Employee> e1 = (Entry<ForKey, Employee>)it.next();
+			ForKey obj = e1.getKey();
+			Employee emp = (Employee) e1.getValue();
+			System.out.println("\n\n---------After------------");	
+			System.out.print("Key :" + obj.getIVal());
+			System.out.print("\tValue :"+emp);
+			System.out.print("\tField :"+emp.getName());
+			
+		}		
+	}
+	
+}
