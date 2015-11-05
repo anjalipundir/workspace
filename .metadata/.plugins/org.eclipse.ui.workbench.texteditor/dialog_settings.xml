@@ -6,22 +6,23 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ObjectAsKey" key="selection"/>
+		<item value="springBasicXmls" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="TestKeyObj"/>
-			<item value="ApplicationName"/>
-			<item value="newTokenRequest"/>
-			<item value="accesstoken"/>
-			<item value="lowLevelHttpResponse"/>
-			<item value="response"/>
-			<item value="Response"/>
-			<item value="redirect_uris"/>
+			<item value="webXml"/>
+			<item value="point3"/>
+			<item value="point2"/>
+			<item value="triangle2"/>
+			<item value="dependencyInjection"/>
+			<item value="HelloSpring"/>
+			<item value="http://www.springframework.org/schema/context"/>
+			<item value="context:component-scan"/>
 		</list>
 		<list key="replacehistory">
+			<item value="springBasicXmls"/>
 			<item value="ObjectAsKey"/>
 		</list>
 	</section>
@@ -29,7 +30,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="563" key="DIALOG_X_ORIGIN"/>
+		<item value="433" key="DIALOG_X_ORIGIN"/>
 		<item value="119" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

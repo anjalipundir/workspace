@@ -1,0 +1,42 @@
+1. Learning Spring from https://javabrains.io/courses/spring_core/lessons/Writing-Code-Using-the-Bean-Factory
+2. Learned Dependency Injection
+3. Learned How Spring works on FactoryPattern 
+and Spring implements this using its BeanFactory 
+that is a called and reads configurations from XML file(mostly called bean.xml/or any name defined in main class)
+BeanFactory : org.springframework.beans.factory.BeanFactory
+
+4. Use of ApplicationContext=(BeanFactor + Additional Functionality), it can do all that BeanContext can do.
+ApplicationContext users - ClassPathXmlApplicationContext("filename.xml") to instantiate. 
+filename.xml should be in the class path. 
+5. Setters injection :
+	Instantiating variables of object : Property tag in XML uses Setters to inject the values to the object
+	<property name="type" value="Equilateral" />
+6.Constructor Injection :
+	<constructor-arg value="20" />
+	OR
+	<constructor-arg type="java.lang.String" value="20" />
+	OR
+	<constructor-arg index="0" value="20" />
+	type is not mandatory unless you have ambiguous constructors 
+7.For objects: eg with Point.java
+	<property name="pointA" ref="zeroPoint" />
+	
+8.Inner Bean - Beans inside bean (it could not be used by other objects)   
+9.Alias - We can give aliases
+10. autoWire 
+	We can autoWire = byName, byType(should have only one Bean per Type), byConstructor (it works similar to byType, just that it does not use setters, but uses constructors)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. Spring Bean Scopes :
+Reference : https://javabrains.io/courses/spring_core/lessons/Understanding-Bean-Scopes
+	ApplicationContext creates all the beans in XML once it is initialized.
+	This is configurable. But above is default.
+	Here Comes Scopes in picture: 
+	Basic Scopes :
+	a. Singleton - (Default) Only once per Spring container. It looks all the beans and initialize 1 bean only once. No matter how many calls have been done to it. 
+	b. Prototype - new object every time there is a request or reference
+	Other Scopes :
+	c. Web-aware Context Bean Scopes - 
+		Request - new bean per servlet request
+		Session - new bean per servlet session
+		Global Sessions - New bean per global HTTP session (portlet context)
+		

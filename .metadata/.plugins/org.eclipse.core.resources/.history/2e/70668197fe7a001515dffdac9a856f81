@@ -1,0 +1,19 @@
+package com.anjali.springBasics.dependencyInjection;
+
+public class MyApplication {
+	
+	public static void main(String args[]){
+		
+		//Triangle
+		Triangle triangle = new Triangle(12,14);
+		FindArea findArea = new FindArea();
+		findArea.setShape(triangle);
+		findArea.getShape();
+		
+		Circle circle = new Circle(12);
+		//findArea = new FindArea();
+		findArea.setShape(circle);
+		findArea.getShape();
+	}
+
+}

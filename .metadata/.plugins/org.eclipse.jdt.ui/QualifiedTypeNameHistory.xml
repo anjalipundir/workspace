@@ -15,4 +15,19 @@
 <fullyQualifiedTypeName name="learn.TestKeyObj"/>
 <fullyQualifiedTypeName name="learn.ObjectAsKey"/>
 <fullyQualifiedTypeName name="learn.Employee"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.TreeSet"/>
+<fullyQualifiedTypeName name="com.anjali.springBasics.dependencyInjection.IShape"/>
+<fullyQualifiedTypeName name="com.anjali.springBasics.dependencyInjection.FindArea"/>
+<fullyQualifiedTypeName name="org.apache.naming.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="com.anjali.springBasics.dependencyInjection.Triangle"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.FileSystemResource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 </qualifiedTypeNameHistroy>

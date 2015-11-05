@@ -1,0 +1,4 @@
+1.
+2.Test and Try Regex
+3.Object as a Key - For HashCode() and Equals() method override - Trying example and reason why we override them.
+4.Comparator vs Comparable :: compareTo() vs compare()

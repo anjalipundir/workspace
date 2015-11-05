@@ -1,0 +1,11 @@
+package com.anjali.springBasics;
+
+public class Triangle2{
+
+	private Point pointA;
+	private Point pointB;
+	private Point pointC;
+	public void draw(){
+		System.out.println(" Triangle Drawn");
+	}
+}

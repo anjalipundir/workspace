@@ -1,0 +1,60 @@
+package com.anjali.springBasics;
+
+public class Triangle implements IShape{
+
+	private int l;
+	private String type;	
+	private int b;
+	
+
+	public Triangle() {
+	
+	}
+	public Triangle(String type) {
+		// TODO Auto-generated constructor stub
+		this.type = type;
+	}
+	
+	public Triangle(int l) {
+		// TODO Auto-generated constructor stub
+		this.l = l;
+	}
+	public Triangle(String type, int b) {
+		// TODO Auto-generated constructor stub
+		this.type = type;
+		this.b = b;
+	} 
+	public Triangle(int l, int b) {
+		// TODO Auto-generated constructor stub
+		this.l = l;
+		this.b = b;
+	}
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		System.out.println("Triangle : "+ (l*b)/2);
+	}
+	
+	
+	public void draw(){
+		System.out.println(type + " Triangle of length ="+ l+" and breath = "+ b +" Drawn");
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	//Property tag in XML uses Setters to inject the values
+	//public void setType(String type) {
+		//this.type = type;
+	//}
+
+	public int getL() {
+		return l;
+	}
+	
+	public int getB() {
+		return b;
+	}
+	
+}

@@ -1,0 +1,8 @@
+package com.anjali.webservices.soap;
+
+public class Snippet {
+	public static void main(String[] args) {
+		com.anjali.webservices.soap
+	}
+}
+

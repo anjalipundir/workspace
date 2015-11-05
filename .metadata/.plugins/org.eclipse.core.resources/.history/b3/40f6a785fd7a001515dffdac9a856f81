@@ -1,0 +1,12 @@
+package com.anjali.springBasics.dependencyInjection;
+
+public class Circle implements IShape{
+	int r;
+	
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 3.14*r*r;
+	}
+
+}

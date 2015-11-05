@@ -1,0 +1,18 @@
+package com.anjali.springBasics.dependencyInjection;
+
+public class Triangle implements IShape{
+	int l;
+	int b;
+	
+	public Triangle(int l, int b) {
+		// TODO Auto-generated constructor stub
+		this.l = l;
+		this.b = b;
+	}
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		System.out.println("Triangle : "+ (l*b)/2);
+	}
+
+}

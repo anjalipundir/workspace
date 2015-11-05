@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="triangle2" class="com.anjali.springBasics.Triangle2">
+        <property name="pointA" ref="zeroPoint" />
+        <property name="pointB">
+    		<bean class="com.anjali.springBasics.Point"><!-- inner Bean and id not required -->
+		        <property name ="x" value="-20"/>
+		        <property name ="y" value="0"/>
+		    </bean>        
+        </property>
+        <property name="pointC">
+		    <bean id="point3" class="com.anjali.springBasics.Point">
+		        <property name ="x" value="20"/>
+		        <property name ="y" value="0"/>
+		    </bean>        
+        </property>
+    </bean>
+    
+    <bean id="zeroPoint" class="com.anjali.springBasics.Point">
+        <property name ="x" value="0"/>
+        <property name ="y" value="0"/>
+    </bean>
+    
+    
+</beans>

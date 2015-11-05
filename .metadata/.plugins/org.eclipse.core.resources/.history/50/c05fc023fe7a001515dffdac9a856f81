@@ -1,0 +1,5 @@
+package com.anjali.springBasics.dependencyInjection;
+
+public class MyApplication {
+
+}

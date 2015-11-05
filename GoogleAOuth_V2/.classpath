@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="lib" path="lib/commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="lib/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="lib/javax.servlet-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="lib/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/struts2-core-2.3.20.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-api-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-compat-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-core-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-jsp-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-servlet-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/xwork-core-2.3.20.jar"/>
+	<classpathentry kind="con" path="com.google.gdt.eclipse.managedapis.MANAGED_API_CONTAINER/plus-v1r240lv1.18.0-rc"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

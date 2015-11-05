@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    <bean id="triangle" class="com.anjali.springBasicsLevel2.Triangle">
+        
+        
+    </bean>
+    
+    <bean id="pointA" class="com.anjali.springBasicsLevel2.Point">
+        <property name ="x" value="0"/>
+        <property name ="y" value="0"/>
+    </bean>
+    <bean id="pointB" class="com.anjali.springBasicsLevel2.Point">
+        <property name ="x" value="-20"/>
+        <property name ="y" value="0"/>
+    </bean>
+    <bean id="pointC" class="com.anjali.springBasicsLevel2.Point">
+        <property name ="x" value="20"/>
+        <property name ="y" value="0"/>
+    </bean>
+</beans>

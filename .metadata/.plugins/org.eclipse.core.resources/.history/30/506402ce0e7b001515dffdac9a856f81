@@ -1,0 +1,8 @@
+1. Learning Spring from https://javabrains.io/courses/spring_core/lessons/Writing-Code-Using-the-Bean-Factory
+2. Learned Dependency Injection
+3. Learned How Spring works on FactoryPattern 
+and Spring implements this using its BeanFactory 
+that is a called and reads configurations from XML file(mostly called bean.xml/or any name defined in main class)
+BeanFactory : org.springframework.beans.factory.BeanFactory
+
+4. 

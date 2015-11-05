@@ -1,0 +1,12 @@
+package com.anjali.springBasics.dependencyInjection;
+
+public interface IShape {
+	
+	public void draw(); 
+	
+	
+	
+	
+	
+
+}

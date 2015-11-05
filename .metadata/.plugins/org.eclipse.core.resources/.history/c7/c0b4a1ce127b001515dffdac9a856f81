@@ -1,0 +1,8 @@
+package com.anjali.springBasics;
+
+public class Triangle2 implements IShape{
+
+	public void draw(){
+		System.out.println(type + " Triangle of length ="+ l+" and breath = "+ b +" Drawn");
+	}	
+}

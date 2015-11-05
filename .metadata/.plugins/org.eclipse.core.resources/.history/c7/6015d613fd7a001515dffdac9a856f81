@@ -1,0 +1,6 @@
+package com.anjali.springBasics.dependencyInjection;
+
+protected class FindArea {
+
+	Shape shape;
+}

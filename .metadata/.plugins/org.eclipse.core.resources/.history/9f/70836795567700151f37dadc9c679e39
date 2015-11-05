@@ -1,0 +1,4 @@
+1.
+2.Object as a Key - For HashCode() and Equals() method override - Trying example and reason why we override them.
+3.Comparator vs Comparable :: compareTo() vs compare()
+4.

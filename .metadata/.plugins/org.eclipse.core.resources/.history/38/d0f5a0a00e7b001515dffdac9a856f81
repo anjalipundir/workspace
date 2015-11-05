@@ -1,0 +1,55 @@
+package com.anjali.springBasics;
+
+public class Triangle implements IShape{
+	private int l;
+	private int b;
+	
+	private String type;
+
+	//This is For MyApplication Example only, For Area
+	public Triangle() {
+	
+	}
+	
+	//This is For MyApplication Example only, For Area 
+	public Triangle(int l, int b) {
+		// TODO Auto-generated constructor stub
+		this.l = l;
+		this.b = b;
+	}
+	@Override
+	public void area() {
+		// TODO Auto-generated method stub
+		System.out.println("Triangle : "+ (l*b)/2);
+	}
+	
+	
+	public void draw(){
+		System.out.println(type + " Triangle Drawn");
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public int getL() {
+		return l;
+	}
+
+	public void setL(int l) {
+		this.l = l;
+	}
+
+	public int getB() {
+		return b;
+	}
+
+	public void setB(int b) {
+		this.b = b;
+	}
+	
+}

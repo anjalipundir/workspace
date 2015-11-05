@@ -1,0 +1,17 @@
+package com.anjali.helloSpring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+   public static void main(String[] args) {
+	   
+	   //Step 1 : Create application context where we used framework API ClassPathXmlApplicationContext()
+      ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
+      //Step 2 : Is used to get required bean using getBean() method of the created context
+      HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+
+      obj.getMessage();
+   }
+}

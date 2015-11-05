@@ -1,0 +1,14 @@
+package com.anjali.springBasics.dependencyInjection;
+
+class FindArea {
+
+	IShape shape;
+
+	public IShape getShape() {
+		return shape.area();
+	}
+
+	public void setShape(IShape shape) {
+		this.shape = shape;
+	}
+}

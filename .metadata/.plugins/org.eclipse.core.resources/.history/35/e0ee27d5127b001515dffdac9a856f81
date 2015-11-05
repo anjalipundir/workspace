@@ -1,0 +1,8 @@
+package com.anjali.springBasics;
+
+public class Triangle2{
+
+	public void draw(){
+		System.out.println(" Triangle of length ="+ l+" and breath = "+ b +" Drawn");
+	}	
+}
